@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Clima App</title>
+        <link rel="stylesheet" href="clima.css">
+    </head>
+
+    <body id="body">
+        <div class="card ">
+            <div class="busqueda">
+                <input type="text" placeholder="Ingrese la ciudad" id="ciudad">
+                <button class="boton" type="submit" onclick="buscar()">
+                    <ion-icon name="search-circle-outline"></ion-icon>
+                </button>
+            </div><br>
+
+            <div class="contenedor">
+                <div class="hijo box1">
+                    <img id="icono"><br>
+                    <h5 id="lugar"></h5>   
+                </div>
+                <div class="hijo box2">
+                    <ion-icon class="icon" name="thermometer-outline"></ion-icon>
+                    <p id="grados"></p>
+                    <p id="descripcion"></p>
+                </div>
+                <div class="hijo box3">
+                    <p>HORA</p><hr>
+                    <ion-icon class="icon_hora" name="time-outline"></ion-icon>
+                    <p class="card-text" id="hora"></p>
+                </div>
+            </div>          
+        </div>
+
+
+        
+
+        <script src="clima.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    </body>
+</html>
