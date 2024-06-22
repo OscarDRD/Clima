@@ -12,7 +12,7 @@ const buscar = () => {
     console.log(data);
 }
 
-const cargarAPI = (lugar, country) => { //Promesa
+const cargarAPI = (lugar, country) => { //Promesa :)
     const API = "0893a84e0737f4117e1abd6a42b8dce3";
     const url = `http://api.openweathermap.org/data/2.5/weather?q=${lugar},${country}&appid=${API}&units=metric&lang=sp`
     fetch(url)
